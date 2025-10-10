@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Single CSS Triangle</title>
+
     <style>
-        .container{
-            width: 0px;
-            height: 0px;
-            margin: auto;
-            background-color: purple;
-            border-left: 50%;
-            border-right: 50%;
-            border-bottom: 100;
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 75px 150px 75px;
+            border-color: transparent transparent #ff6347 transparent;
         }
     </style>
 </head>
 <body>
-    <div class="container"></div>
+
+    <div class="triangle"></div>
+
 </body>
 </html>
